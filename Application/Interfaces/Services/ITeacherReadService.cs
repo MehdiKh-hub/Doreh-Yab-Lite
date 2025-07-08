@@ -4,7 +4,7 @@ namespace Application.Interfaces.Services
 {
     public interface ITeacherReadService
     {
-        Task<IReadOnlyList<TeacherDTo>> GetCourseAsync(string? search, string? sortBy);
+        Task<IReadOnlyList<TeacherDTo>> GetTeacherAsync(string? search, string? sortBy);
     }
 }
     

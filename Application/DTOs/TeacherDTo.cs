@@ -8,10 +8,13 @@ namespace Application.DTOs
 {
     public class TeacherDTo
     {
-        public int Id { get; private set; }
-        public string FullName { get; private set; }
-        public string? Bio { get; private set; }
-        public string? Email { get; private set; }
-        public int Rank { get; private set; }
+        public int Id { get; set; }
+        public string? FullName { get; set; }
+        public string? Bio { get; set; }
+        public string? Email { get; set; }
+        public int Rank { get; set; }
+
+        public int CoursesCount { get; set; }
+        public List<string>? CourseTitles { get; set; }
     }
 }
