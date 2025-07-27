@@ -2,7 +2,7 @@
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Metadata.Builders;
 
-namespace Infrastracture.Persistence.Configurations
+namespace Infra.Persistence.Configurations
 {
     public class StudentCourseConfig : IEntityTypeConfiguration<StudentCourse>
     {

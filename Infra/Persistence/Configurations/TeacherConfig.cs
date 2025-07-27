@@ -1,13 +1,8 @@
 ﻿using Domain.Entities;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Metadata.Builders;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
-namespace Infrastracture.Persistence.Configurations
+namespace Infra.Persistence.Configurations
 {
     public class TeacherConfig : IEntityTypeConfiguration<Teacher>
     {

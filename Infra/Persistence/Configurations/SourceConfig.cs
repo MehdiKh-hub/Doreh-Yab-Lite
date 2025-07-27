@@ -2,13 +2,13 @@
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Metadata.Builders;
 
-namespace Infrastracture.Persistence.Configurations
+namespace Infra.Persistence.Configurations
 {
-    public class SubjectConfig : IEntityTypeConfiguration<Subject>
+    public class SourceConfig : IEntityTypeConfiguration<Source>
     {
-        public void Configure(EntityTypeBuilder<Subject> builder)
+        public void Configure(EntityTypeBuilder<Source> builder)
         {
-            builder.ToTable("Subjects");
+            builder.ToTable("Sources");
 
             builder.HasKey(s => s.Id);
 
@@ -19,12 +19,11 @@ namespace Infrastracture.Persistence.Configurations
             builder.Property(s => s.Rank)
                 .IsRequired();
 
-            builder.Property(s => s.Description)
-                .HasMaxLength(1000);
+            builder.Property(s => s.WebsiteUrl)
+                .HasMaxLength(500);
 
-            builder.Metadata.FindNavigation(nameof(Subject.Courses))!
+            builder.Metadata.FindNavigation(nameof(Source.Courses))!
                 .SetPropertyAccessMode(PropertyAccessMode.Field);
         }
     }
-    
 }
