@@ -1,6 +1,6 @@
 ﻿using Application.DTOs;
 
-namespace Application.Interfaces.Services
+namespace Application.Interfaces
 {
     public interface ITeacherReadService
     {

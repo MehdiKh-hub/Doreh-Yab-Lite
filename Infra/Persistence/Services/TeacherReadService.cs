@@ -1,4 +1,8 @@
-﻿namespace Infra.Persistence.Services
+﻿using Application.DTOs;
+using Application.Interfaces;
+using Microsoft.EntityFrameworkCore;
+
+namespace Infra.Persistence.Services
 {
     public class TeacherReadService(ApplicationDbContext context) : ITeacherReadService
     {

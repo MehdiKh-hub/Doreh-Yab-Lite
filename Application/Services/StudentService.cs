@@ -1,5 +1,5 @@
-﻿using Application.Interfaces.Ripository;
-using Application.Interfaces.Services;
+﻿using Application.Interfaces;
+using Application.Interfaces.Ripository;
 using Domain.Entities;
 using Presentation_API.DTOs;
 
@@ -9,6 +9,7 @@ namespace Application.Services
     public class StudentService(IStudentRepository repository) : IStudentService
     {
         private readonly IStudentRepository _repository = repository;
+
 
         public async Task<IEnumerable<StudentDto>> GetAllAsync()
         {

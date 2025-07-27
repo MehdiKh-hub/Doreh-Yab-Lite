@@ -1,5 +1,5 @@
 ﻿using Application.DTOs;
-using Application.Interfaces.Services;
+using Application.Interfaces;
 using Microsoft.EntityFrameworkCore;
 
 namespace Infra.Persistence.Services
