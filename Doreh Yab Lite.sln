@@ -11,6 +11,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Presentation-API", "Present
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Infra", "Infra\Infra.csproj", "{4926D116-AD83-481E-85F6-BCB7E989DE93}"
 EndProject
+Project("{54A90642-561A-4BB1-A94E-469ADEE60C69}") = "presentation-react", "Presentation-React\presentation-react.esproj", "{516DD715-2CD4-1DF0-A359-80D083C7A3BF}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -33,6 +35,12 @@ Global
 		{4926D116-AD83-481E-85F6-BCB7E989DE93}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{4926D116-AD83-481E-85F6-BCB7E989DE93}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{4926D116-AD83-481E-85F6-BCB7E989DE93}.Release|Any CPU.Build.0 = Release|Any CPU
+		{516DD715-2CD4-1DF0-A359-80D083C7A3BF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{516DD715-2CD4-1DF0-A359-80D083C7A3BF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{516DD715-2CD4-1DF0-A359-80D083C7A3BF}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{516DD715-2CD4-1DF0-A359-80D083C7A3BF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{516DD715-2CD4-1DF0-A359-80D083C7A3BF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{516DD715-2CD4-1DF0-A359-80D083C7A3BF}.Release|Any CPU.Deploy.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
