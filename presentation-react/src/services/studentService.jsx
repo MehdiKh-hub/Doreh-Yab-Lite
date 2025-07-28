@@ -1,33 +1,53 @@
-﻿import api from './api';
+﻿import api from './api.jsx';
 
 export const studentService = {
-    // دریافت همه دانشجویان
     getAll: async () => {
-        const response = await api.get('/students');
-        return response.data;
+        try {
+            const response = await api.get('/students');
+            return response.data;
+        } catch (error) {
+            console.error('Error fetching students:', error);
+            throw new Error('خطا در دریافت لیست دانشجویان');
+        }
     },
 
-    // دریافت دانشجو بر اساس ID
     getById: async (id) => {
-        const response = await api.get(`/students/${id}`);
-        return response.data;
+        try {
+            const response = await api.get(`/students/${id}`);
+            return response.data;
+        } catch (error) {
+            console.error('Error fetching student:', error);
+            throw new Error('خطا در دریافت اطلاعات دانشجو');
+        }
     },
 
-    // ایجاد دانشجوی جدید
     create: async (studentData) => {
-        const response = await api.post('/students', studentData);
-        return response.data;
+        try {
+            const response = await api.post('/students', studentData);
+            return response.data;
+        } catch (error) {
+            console.error('Error creating student:', error);
+            throw new Error('خطا در ایجاد دانشجو');
+        }
     },
 
-    // به‌روزرسانی دانشجو
     update: async (id, studentData) => {
-        const response = await api.put(`/students/${id}`, studentData);
-        return response.data;
+        try {
+            const response = await api.put(`/students/${id}`, studentData);
+            return response.data;
+        } catch (error) {
+            console.error('Error updating student:', error);
+            throw new Error('خطا در به‌روزرسانی دانشجو');
+        }
     },
 
-    // حذف دانشجو
     delete: async (id) => {
-        const response = await api.delete(`/students/${id}`);
-        return response.data;
+        try {
+            const response = await api.delete(`/students/${id}`);
+            return response.data;
+        } catch (error) {
+            console.error('Error deleting student:', error);
+            throw new Error('خطا در حذف دانشجو');
+        }
     }
 };

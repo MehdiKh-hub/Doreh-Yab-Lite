@@ -1,12 +1,14 @@
-﻿import axios from 'axios';
+﻿import axios from "axios";
 
-const API_BASE_URL = 'https://localhost:7226/api/'; // آدرس API شما
+// آدرس API خود را بر اساس تنظیمات بک‌اند قرار دهید
+const API_BASE_URL = "https://localhost:5001/api";
 
 const api = axios.create({
     baseURL: API_BASE_URL,
     headers: {
-        'Content-Type': 'application/json',
+        "Content-Type": "application/json",
     },
+    withCredentials: false, // اگر به کوکی نیاز ندارید
 });
 
 export default api;
